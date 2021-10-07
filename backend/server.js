@@ -10,8 +10,7 @@ const port = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 
-// const uri = process.env.ATLAS_URI;
-const uri ='mongodb+srv://007kartik:Learn1Uolo@learn1.oqsc0.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
+const uri = process.env.ATLAS_URI;
 mongoose.connect(
   uri, { useNewUrlParser: true }
 );
